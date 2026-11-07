@@ -1,0 +1,29 @@
+# Environment & secrets
+.venv/
+venv/
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data and model artifacts (too large / not for git)
+dataset/raw/*
+dataset/processed/*
+dataset/external_test/*
+!dataset/**/.gitkeep
+saved_models/*.pth
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Results can be regenerated; keep only what you choose to commit
+results/**/*.png
+results/**/*.csv
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

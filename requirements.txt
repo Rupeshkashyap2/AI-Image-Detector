@@ -1,0 +1,19 @@
+numpy
+pandas
+scikit-learn
+pillow
+opencv-python<5
+matplotlib
+seaborn
+tqdm
+imagehash
+ipykernel
+jupyter
+pytest
+# Backend (used from Phase 6)
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+python-dotenv
+httpx

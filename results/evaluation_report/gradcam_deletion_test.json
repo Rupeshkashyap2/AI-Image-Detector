@@ -1,0 +1,29 @@
+{
+  "fraction": 0.2,
+  "overall": {
+    "n": 200,
+    "mean_drop_top": 0.39792826883980176,
+    "mean_drop_bottom": 0.10643576255242806,
+    "flip_rate_top": 0.41,
+    "flip_rate_bottom": 0.11,
+    "share_top_drop_larger": 0.78
+  },
+  "by_true_class": {
+    "real": {
+      "n": 100,
+      "mean_drop_top": 0.008809549048453385,
+      "mean_drop_bottom": -0.002029486894607544,
+      "flip_rate_top": 0.02,
+      "flip_rate_bottom": 0.01,
+      "share_top_drop_larger": 0.59
+    },
+    "ai_generated": {
+      "n": 100,
+      "mean_drop_top": 0.7870469886311501,
+      "mean_drop_bottom": 0.21490101199946365,
+      "flip_rate_top": 0.8,
+      "flip_rate_bottom": 0.21,
+      "share_top_drop_larger": 0.97
+    }
+  }
+}

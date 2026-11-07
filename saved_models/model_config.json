@@ -1,0 +1,51 @@
+{
+  "architecture": "efficientnet_b0",
+  "checkpoint": "efficientnet_best.pth",
+  "class_names": [
+    "real",
+    "ai_generated"
+  ],
+  "positive_class": "ai_generated",
+  "img_size": 224,
+  "normalize_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "normalize_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "gradcam_target_layer": "features[-1]",
+  "best_epoch": 19,
+  "best_validation_metrics": {
+    "loss": 0.061652406056722,
+    "accuracy": 0.976,
+    "auc": 0.9981466666666667
+  },
+  "epochs_run": 20,
+  "smoke_test": false,
+  "training_config": {
+    "arch": "efficientnet_b0",
+    "num_classes": 2,
+    "pretrained": true,
+    "dropout": 0.2,
+    "batch_size": 32,
+    "num_workers": 4,
+    "head_epochs": 3,
+    "head_lr": 0.001,
+    "finetune_epochs": 17,
+    "finetune_lr": 0.0001,
+    "unfreeze_blocks": 4,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.0,
+    "scheduler_factor": 0.5,
+    "scheduler_patience": 2,
+    "early_stop_patience": 5,
+    "use_amp": true,
+    "seed": 42,
+    "max_batches": 0,
+    "run_name": "efficientnet"
+  }
+}

@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+python-dotenv
+pillow
+numpy
+pandas
+matplotlib
+opencv-python-headless<5
+# torch and torchvision are installed separately. For a CPU-only host:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
